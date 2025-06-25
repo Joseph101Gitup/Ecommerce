@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Template</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+    <link rel="icon" href="../Admin/Assets/img/favicon/favicon.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { families: ["Public Sans:300,400,500,600,700"] },
+            custom: {
+                families: [
+                    "Font Awesome 5 Solid",
+                    "Font Awesome 5 Regular",
+                    "Font Awesome 5 Brands",
+                    "simple-line-icons",
+                ],
+                urls: ["assets/css/fonts.min.css"],
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            },
+        });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar" data-background-color="dark">
+            <div class="sidebar-logo">
+                <!-- Logo Header -->
+                <div class="logo-header" data-background-color="dark">
+                    <a href="index.php" class="logo">
+                        <img src="" //assets\img\kaiadmin\logo_light.png alt="navbar brand" class="navbar-brand"
+                            height="80" width="330" />
+                    </a>
+                    <div class="nav-toggle">
+                        <button class="btn btn-toggle toggle-sidebar">
+                            <i class="gg-menu-right"></i>
+                        </button>
+                        <button class="btn btn-toggle sidenav-toggler">
+                            <i class="gg-menu-left"></i>
+                        </button>
+                    </div>
+                    <button class="topbar-toggler more">
+                        <i class="gg-more-vertical-alt"></i>
+                    </button>
+                </div>
+                <!-- End Logo Header -->
+            </div>
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-secondary">
+                        <li class="nav-item active">
+                            <a data-bs-toggle="collapse" href="index.php" class="collapsed" aria-expanded="false">
+                                <i class="fas fa-home"></i>
+                                <p>Dashboard</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="dashboard">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="index.php">
+                                            <span class="sub-item">Dashboard 1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section">Components</h4>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a  href="bookingconfirmation.php">
+                  <i class="fas fa-layer-group"></i>
+                  <p>bookingconfirmation</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="components/avatars.html">
+                        <span class="sub-item"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/buttons.html">
+                        <span class="sub-item">Buttons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/gridsystem.html">
+                        <span class="sub-item">Grid System</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/panels.html">
+                        <span class="sub-item">Panels</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/notifications.html">
+                        <span class="sub-item">Notifications</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/sweetalert.html">
+                        <span class="sub-item">Sweet Alert</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/font-awesome-icons.html">
+                        <span class="sub-item">Font Awesome Icons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/simple-line-icons.html">
+                        <span class="sub-item">Simple Line Icons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="components/typography.html">
+                        <span class="sub-item">Typography</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <!-- Logo Header -->
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/kaiadmin/logo_light.png" alt="navbar brand" class="navbar-brand"
+                                height="20" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                    <!-- End Logo Header -->
+                </div>
+                <!-- Navbar Header -->
+                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+                    <div class="container-fluid">
+
+
+                        <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+
+                            <li class="nav-item topbar-user dropdown hidden-caret">
+                                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
+                                    aria-expanded="false">
+                                    <div class="avatar-sm">
+                                        <img src="" alt="..." class="avatar-img rounded-circle" />
+                                    </div>
+                                    <span class="profile-username">
+                                        <span class="op-7">Hi,</span>
+                                        <span class="fw-bold"></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                    <div class="dropdown-user-scroll scrollbar-outer">
+                                        <li>
+                                            <div class="user-box">
+                                                <div class="avatar-lg">
+                                                    <img src="" alt="image profile" class="avatar-img rounded" />
+                                                </div>
+                                                <div class="u-text">
+                                                    <h4></h4>
+                                                    <p class="text-muted"></p>
+                                                    <!-- <a
+                              href="profile.html"
+                              class="btn btn-xs btn-secondary btn-sm"
+                              >View Profile</a
+                            > -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div> -->
+                                            <a class="dropdown-item" href="../logout.php">Logout</a>
+                                            <a class="dropdown-item" href="changepassword.php">Change Password</a>
+
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- End Navbar -->
+            </div>
+            <div class="content-wrapper">
+                <!-- Content -->
+
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="row">
+                        <div class="col-md-9">
+
+                            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Enter Guide Details
+                            </h4>
+                        </div>
+                        <div class=" col-lg-3">
+                            <button type="button" class="btn btn-primary"
+                                onclick="window.location.href='view.php'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-11">
+                            <div class="card mb-4">
+                                <h5 class="card-header">Registration</h5>
+                                <div class="card-body">
+                                    <form action="Register.html" method="POST" class="forms-sample" id="emailForm"
+                                        enctype="multipart/form-data">
+                                        <label for="floatingInput">Enter Your Name</label>
+                                        <div class="form-floating mb-3">
+
+                                            <input type="text" id="txtname" name="txtname" class="form-control"
+                                                pattern="^[A-Za_z][A-Za-z -]+$"
+                                                title="Must start with capital letter followed by upper or lowercase letters" />
+                                        </div>
+                                        <label for="floatingInput">Enter Phone number</label>
+                                        <div class="form-floating mb-3">
+
+                                            <input type="phone" name="txtphone" class="form-control" id="floatingInput"
+                                                placeholder="Phone" aria-describedby="floatingInputHelp" minlength="10"
+                                                maxlength="10" pattern="[0-9]{10}" />
+                                        </div>
+                                        <label for="exampleInputName1">Select Course: </label>
+                                        <div class="form-floating mb-3">
+
+                                            <select name="Course" id="Course" class="form-control" style="width:850px;">
+                                                <option value="0"></option>
+                                                <option value="1">Computer Science</option>
+                                                <option value="2">Comerse</option>
+                                                <option value="3">Animation</option>
+
+                                            </select>
+                                        </div>
+                                        <label for="floatingInput">Enter Email</label>
+                                        <div class="form-floating mb-3">
+
+                                            <input type="email" name="txtemail" class="form-control" id="email"
+                                                placeholder="Email" title="must enter a valid email address" />
+                                        </div>
+                                        <label for="date">Enter DOB</label>
+                                        <div class="form-floating mb-3">
+
+                                            <span class="text-secondary"><input type="date" name="date"
+                                                    class="form-control" id="date"></span>
+
+                                        </div>
+                                        <label for="floatingInput">Enter Password</label>
+                                        <div class="form-floating mb-3">
+
+                                            <input type="text" name="txtpassword" class="form-control" id="txtpassword"
+                                                placeholder="Password" aria-describedby="floatingInputHelp" />
+                                                <small id="strengthMsg" class="form-text"></small>
+                                        </div>
+                                       
+
+                                        <label for="floatingInput">Repeat Password</label>
+                                        <div class="form-floating mb-3">
+                                            
+
+                                            <input type="text" name="txtrpassword" class="form-control"
+                                                id="txtrpassword" placeholder="Password"
+                                                aria-describedby="floatingInputHelp" />
+                                                <small id="matchMsg" class="form-text"></small>
+                                        </div>
+                                        
+
+
+
+
+                                        <div class="form-floating" style="width: 1250px; margin-left: 450px;">
+                                            <button type="submit" name="btnsub" class="btn btn-primary">Submit</button>
+                                        </div>
+
+                                        <button type="login" name="login" class="btn btn-primary"
+                                            href="Login.html">Login</button>
+
+                                    </form>
+                                    <!-- <script>
+                                        function emailvalidation() {
+                                            var email = document.getElementById('email').value;
+                                            var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+
+                                            if (!emailPattern.test(email)) {
+                                                alert('Please enter a valid email address.');
+                                                event.preventDefault(); // Prevent form submission
+                                            }
+                                            else {
+                                                return true;
+                                            }
+
+                                        };
+                                    </script> -->
+                                    <br>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $("#emailForm").validate({
+            rules: {
+                txtname: {
+                    required: true,
+                    pattern: /^[A-Za-z\s\-]+$/,
+                },
+                txtphone: {
+                    required: true,
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                Course: {
+                    required: true,
+                    min: 1
+                },
+                txtemail: {
+                    required: true,
+                    email: true,
+                    pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i
+                },
+                date: {
+                    required: true,
+                    date: true
+                },
+                txtpassword: {
+                    required: true,
+                    minlength: 8,
+                    pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/
+                },
+                txtrpassword: {
+                    required: true,
+                    equalTo: "#txtpassword"
+                },
+
+                Course: {
+                    required: true
+                }
+
+            },
+            messages: {
+                txtname: {
+                    required: "Please enter your name",
+                    pattern: "Only letters, spaces, and hyphens are allowed"
+                },
+                txtphone: {
+                    required: "Enter your phone number",
+                    digits: "Only numbers allowed",
+                    minlength: "Phone number must be 10 digits",
+                    maxlength: "Phone number must be 10 digits"
+                },
+                Course: {
+                    required: "Please select a course",
+                    min: "Please select a valid course"
+                },
+                txtemail: {
+                    required: "Enter your email",
+                    email: "Enter a valid email address"
+                },
+                date: {
+                    required: "Enter your date of birth",
+                    date: "Enter a valid date"
+                },
+                txtpassword: {
+                    required: "Enter your password",
+                    minlength: "Password must be at least 8 characters",
+                    pattern: "Include uppercase, lowercase, and a number"
+                },
+                txtrpassword: {
+                    required: "Repeat the password",
+                    equalTo: "Passwords do not match"
+                }
+            }
+        });
+    });
+</script>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $('#txtrpassword, #txtpassword').on('keyup', function () {
+    var pass = $('#txtpassword').val();
+    var rpass = $('#txtrpassword').val();
+    if (rpass.length > 0) {
+        if (pass === rpass) {
+            $('#matchMsg').text("Passwords match ✅").css("color", "green");
+        } else {
+            $('#matchMsg').text("Passwords do not match ❌").css("color", "red");
+        }
+    } else {
+        $('#matchMsg').text('');
+    }
+});
+
+</script>
